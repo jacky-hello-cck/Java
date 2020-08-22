@@ -107,3 +107,9 @@ public class RoadBike extends Bicycle{
             " MM tires.");
     }
 }
+
+Inheritance
+
+A class that is derived from another class is called a subclass (also a derived class, extended class, or child class). The class from which the subclass is derived is called a superclass (also a base class or a parent class).
+
+Excepting Object, which has no superclass, every class has one and only one direct superclass (single inheritance). In the absence of any other explicit superclass, every class is implicitly a subclass of Object.
