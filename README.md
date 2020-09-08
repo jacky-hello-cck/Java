@@ -14,6 +14,27 @@ public abstract class GraphicObject {
    abstract void draw();
 }
 
+This is a complete sample of abstraction class
+-----------------------------------------------
+public class Paint {
+	
+	abstract class GraphicObject {
+    int x, y;
+    
+    void moveTo(int newX, int newY) {  
+    
+    }
+    
+    abstract void draw();
+    abstract void resize();
+ }
+	
+	public static void main (String args[]) {
+		
+	}
+}
+
+
 Each nonabstract subclass of GraphicObject, such as Circle and Rectangle, must provide implementations for the draw and resize methods:
 
 class Circle extends GraphicObject {
@@ -113,3 +134,39 @@ Inheritance
 A class that is derived from another class is called a subclass (also a derived class, extended class, or child class). The class from which the subclass is derived is called a superclass (also a base class or a parent class).
 
 Excepting Object, which has no superclass, every class has one and only one direct superclass (single inheritance). In the absence of any other explicit superclass, every class is implicitly a subclass of Object.
+
+An Example of Inheritance
+Here is the sample code for a possible implementation of a Bicycle class that was presented in the Classes and Objects lesson:
+
+public class Bicycle {
+        
+    // the Bicycle class has three fields
+    public int cadence;
+    public int gear;
+    public int speed;
+        
+    // the Bicycle class has one constructor
+    public Bicycle(int startCadence, int startSpeed, int startGear) {
+        gear = startGear;
+        cadence = startCadence;
+        speed = startSpeed;
+    }
+        
+    // the Bicycle class has four methods
+    public void setCadence(int newValue) {
+        cadence = newValue;
+    }
+        
+    public void setGear(int newValue) {
+        gear = newValue;
+    }
+        
+    public void applyBrake(int decrement) {
+        speed -= decrement;
+    }
+        
+    public void speedUp(int increment) {
+        speed += increment;
+    }
+        
+}
